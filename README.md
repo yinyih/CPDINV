@@ -18,16 +18,16 @@ Authors: Yihong Yin and Chunfeng Li
 You will need GFORTRAN 4.8+. If your version is lower than it, you can refer to the update.sh file to update GFORTRAN version in system CentOS.
 Installing using source code
 
-*. Download the repository
-2. Go to your download directory: cd /CPDINV/code
-3. Run the Makefile: make install 
-4. Clear temporary files: make clean
-5. Add the program path under the code file directory to the PATH environment variable: 
-echo “export  PATH=/home/CPDINV/code:$PATH”>>~/.bashrc
-source ~/.bashrc
-6. Add document: sudo cp /home/CPDINV/code/man_of_CPD/*.1 /usr/share/man/man1
-Uninstall
-If you want to remove or recompile the software, please use "make uninstall" command.
+1. Download the repository  
+2. Go to your download directory: cd /CPDINV/code  
+3. Run the Makefile: make install     
+4. Clear temporary files: make clean  
+5. Add the program path under the code file directory to the PATH environment variable:   
+echo “export  PATH=/home/CPDINV/code:$PATH”>>~/.bashrc  
+source ~/.bashrc  
+6. Add document: sudo cp /home/CPDINV/code/man_of_CPD/*.1 /usr/share/man/man1  
+Uninstall  
+If you want to remove or recompile the software, please use "make uninstall" command.  
 
 
 ## **References**
