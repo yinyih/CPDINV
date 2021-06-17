@@ -17,10 +17,10 @@ You will need GFORTRAN 4.8+. If your version is lower than it, you can refer to 
 Installing using source code
 
 **1**. Download the repository  
-**2**. Go to your download directory: cd /CPDINV/code
+**2**. Go to your download directory: `cd /CPDINV/code`
 **3**. Run the Makefile: make install
 **4**. Clear temporary files: make clean
-**5**. Add the `program` path under the code file directory to the PATH environment variable: 
+**5**. Add the program path under the code file directory to the PATH environment variable: 
 echo “export  PATH=/home/CPDINV/code:$PATH”>>~/.bashrc
 source ~/.bashrc
 **6**. Add document: sudo cp /home/CPDINV/code/man_of_CPD/*.1 /usr/share/man/man1
