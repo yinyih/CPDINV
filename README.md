@@ -13,7 +13,7 @@ We refer to the USGS potential field software (Cordell et al. 1993; Phillips, 19
 
 Authors: Yihong Yin and Chunfeng Li
 
-**References**
+# **References**
 
 Cordell, L., Phillips, J.D., Godson, R.H., 1993. USGS potential-field geophysical software for PC and compatible microcomputers. Lead. Edge 12, 290
 Kirby, J. F. (2005). Which wavelet best reproduces the Fourier power spectrum? Computers & Geosciences, 31(7), 846-864. doi:10.1016/j.cageo.2005.01.014
