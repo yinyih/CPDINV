@@ -32,7 +32,7 @@ If you want to remove or recompile the software, please use `make uninstall` com
 
 ## **References**
 
-Cordell, L., Phillips, J.D., Godson, R.H., 1993. USGS potential-field geophysical software for PC and compatible microcomputers. Lead. Edge 12, 290
-Kirby, J. F. (2005). Which wavelet best reproduces the Fourier power spectrum? Computers & Geosciences, 31(7), 846-864. doi:10.1016/j.cageo.2005.01.014
-Phillips, J.D., 1997. Potential-field geophysical software for the PC, version 2.2. U.S.Geological Survey, Open-File, Report, 97-725.
-Wang W Y.(2010). Minimum Curvature method and Fortran programming in data processing of potential field (in Chinese). Geological Publishing House.
+Cordell, L., Phillips, J.D., Godson, R.H., 1993. USGS potential-field geophysical software for PC and compatible microcomputers. Lead. Edge 12, 290  
+Kirby, J. F. (2005). Which wavelet best reproduces the Fourier power spectrum? Computers & Geosciences, 31(7), 846-864. doi:10.1016/j.cageo.2005.01.014  
+Phillips, J.D., 1997. Potential-field geophysical software for the PC, version 2.2. U.S.Geological Survey, Open-File, Report, 97-725.  
+Wang W Y.(2010). Minimum Curvature method and Fortran programming in data processing of potential field (in Chinese). Geological Publishing House.  
