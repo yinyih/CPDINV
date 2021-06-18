@@ -16,7 +16,7 @@ Authors: Yihong Yin and Chunfeng Li
 You will need GFORTRAN 4.8+. If your version is lower than it, you can refer to the update.sh file to update GFORTRAN version in system CentOS.
 Installing using source code
 
-**1**. Download the repository
+**1**. Download the repository  
 **2**. Go to your download directory: `cd /CPDINV/code`  
 **3**. Run the Makefile: `make install`  
 **4**. Clear temporary files: `make clean`  
