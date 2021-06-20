@@ -22,7 +22,7 @@ You will need GFORTRAN 4.8+. If your version is lower than it, you can refer to 
 **5**. Add the program path under the code file directory to the PATH environment variable:   
 `echo “export  PATH=/home/CPDINV/code:$PATH”>>~/.bashrc`  
 `source ~/.bashrc`  
-**6**. Add documents: `sudo cp /home/CPDINV/code/man_of_CPD/*.1 /usr/share/man/man1`
+**6**. Add documents: `sudo cp /home/CPDINV/code/man_of_CPD/*.1 /usr/share/man/man1`  
        If you want to know the detailed description of the command, use command such as `man Proj`
 
 ## **Uninstallation** 
