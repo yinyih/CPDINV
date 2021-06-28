@@ -15,7 +15,7 @@ Authors: Yihong Yin and Chunfeng Li
 ### **Dependencies**
 You will need GFORTRAN 4.8+. If your version is lower than it, you can refer to the update.sh file to update GFORTRAN version in system CentOS.
 ### **Installing using source code**
-**1**. Download the repository from https://github.com/yinyih/CPDINV 
+**1**. Download the repository from https://github.com/yinyih/CPDINV   
 **2**. Go to your download directory,such as: `cd /CPDINV/code`  
 **3**. Run the Makefile: `make install`  
 **4**. Clear temporary files: `make clean`  
