@@ -23,7 +23,7 @@
 ! For further information about this program, type "man cwt" in Terminal.
 !
 
-Program cwt2d
+Program Cwt
   
   implicit none 
  
@@ -198,7 +198,7 @@ Program cwt2d
 
  deallocate(w3d,data,coordinate,iwt,rwt)
   
-end Program cwt2d
+end Program Cwt
 
 
 
