@@ -12,7 +12,7 @@
 !    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 !
 ! 
-! usage: LS_Fitting input file name, Zt/Z0,Fractal exponent,line of each spectrum,kmin,kmax output file name
+! usage: Lsfit input file name, Zt/Z0,Fractal exponent,line of each spectrum,index_of_kmin,index_of_kmax output file name
 !
 ! For further information about program, type "man LS_Fitting" in Terminal.
 !
