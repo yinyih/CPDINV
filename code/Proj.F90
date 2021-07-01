@@ -16,7 +16,7 @@
 ! 
 ! usage: Proj input file name, -1/1, central longitude, base latitude, output file name
 !
-! For further information about program, type "man Project " in Terminal.
+! For further information about program, type "man Proj " in Terminal.
 !
 
 Program Proj
