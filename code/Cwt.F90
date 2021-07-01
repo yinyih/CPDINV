@@ -1,28 +1,26 @@
-!***************************** CWT.F90 *****************************
+!***************************** Cwt.F90 *****************************
 !
-!This Program reads grid data from MinCurV.F90,then do continuous wavelet transform(CWT) using a new, hybrid wavelet-the 'FAN wavelet',
-!which is described in Kirby and Swain, 2004.
-!wavelets at different azimuths and scales are convolved with the entire magnetic anomaly grid, 
-!avoiding the segmentation of the signal into ﬁnite‐size windows. 
-!The wavelet transform offers a better compromise between spatial and wavenumber resolution than moving windows 
-!since the wavelet transform uses a combination of multiple wavelet scales to construct a power spectrum at each grid point
+!This program reads grid from MinCurV.F90, and do continuous wavelet transform (CWT) using the 'FAN wavelet' in Kirby (2005).
+!Wavelets at different azimuths and scales are convolved with the entire magnetic anomaly grid, 
+!avoiding the segmentation of the signal into finite-size windows. 
+!Wavelet transform offers a better compromise between spatial and wavenumber resolution than moving windows 
+!by using multiple wavelet scales to construct a power spectrum at each grid point.
 !
 !
-! Written by:
-!  Yihong Yin, Chun-Feng LI,
-!  with additional code by Kirby
+! Credits:  Yihong Yin and Chun-Feng Li @ Zhejiang University
+!  with additional subroutines CWT and Primefac from J.F. Kirby (2005)
 !
 ! 
 ! References:
-!  Kirby, J.F. (2005). Which wavelet best reproduces the Fourier power
-!    spectrum?, Computers and Geosciences, 31(7): 846-864.
-!  Gaudreau, É., Audet, P., & Schneider, D. A. (2019). Mapping Curie Depth Across Western Canada From a Wavelet Analysis of Magnetic Anomaly Data.
-!    Journal of Geophysical Research: Solid Earth, 124(5), 4365-4385. doi:10.1029/2018jb016726
-! 
-! 
+!  Kirby, J.F., 2005. Which wavelet best reproduces the Fourier power spectrum?, Computers and Geosciences, 31(7): 846-864.
+!  Gaudreau, E., Audet, P., & Schneider, D. A. (2019). Mapping Curie Depth Across Western Canada From a Wavelet Analysis of Magnetic Anomaly Data.
+!    Journal of Geophysical Research, 124(5), 4365-4385. 
+!  Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
+!    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
+!   
 ! usage: CWT input file name, center wavenumber, scale increment, moving distance, output file name
 !
-! For further information about program, use command "man CWT " in Terminal.
+! For further information about this program, type "man cwt" in Terminal.
 !
 
 Program cwt2d
@@ -69,7 +67,7 @@ Program cwt2d
     call getarg(4,steplenstr)
     call getarg(5,outfile) 
   else
-    write(*,*) 'pls input correct parameter!'
+    write(*,*) 'pls input correct parameter'
   endif
   
   read(wvn0str,*) wvn0
@@ -118,7 +116,7 @@ Program cwt2d
   dy=(ymax-ymin)/(rows-1)
 
   close(nunit_in)
-  write(*,*)'CWT is running, pls waiting ...'
+  write(*,*)'CWT is running, pls wait ...'
 
   
 
@@ -196,7 +194,7 @@ Program cwt2d
     end do
   close(16)
 
-  write(*,*)'CWT Successfully'
+  write(*,*)'CWT Successful'
 
  deallocate(w3d,data,coordinate,iwt,rwt)
   
@@ -404,6 +402,7 @@ subroutine cwt(w3d,s0,ns,nxA,nyA,nxA0,nyA0,fg,rfg,ifg,dxA,dyA,wvn0,voice)
   deallocate(kpsi,rwg,iwg,sumkpsi,wps)
 
 end subroutine cwt
+
 !**************************************************
 !the function of FFT
 !*************************************************
@@ -1023,12 +1022,13 @@ subroutine open_old_file(nunit,filename,form)
  if(file_exist) then
   open(nunit,file=filename,status='old',form=form)
  else
-  write(*,*) 'file:',filename,'doesnot exist'
+  write(*,*) 'file:',filename,'does not exist'
   write(*,*) 'please input filename='
   read(*,*) filename
   open(nunit,file=filename,status='old',form=form)
  end if
 end subroutine open_old_file
+
 !**********************************************
 !From file channel number Nunit_ Start starts 
 !to search for an unopened file channel number Nunit_ in
