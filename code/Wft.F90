@@ -187,7 +187,7 @@ program Wft
   write(*,*)'FFT Successful'
 
  deallocate(rfg,ifg,afg,data)
-end	program Wft	
+end program Wft	
 
 
 
