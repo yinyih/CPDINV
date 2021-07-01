@@ -11,7 +11,7 @@
 !    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 !
 !
-! usage: DepthZ0 input file, Zt input file, Z0 uncertainty input file, Zt uncertainty input file, Zb output file, Zb uncertainty output file
+! usage: Depth Z0 input file, Zt input file, Z0 uncertainty input file, Zt uncertainty input file, Zb output file, Zb uncertainty output file
 !
 ! For further information about program, typed "man Depth" on prompt.
 !
