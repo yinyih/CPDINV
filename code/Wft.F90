@@ -1,26 +1,24 @@
-
-  
-!***************************** FFT.F90 *****************************
+!***************************** Wft.F90 *****************************
 !
-!reads grid data from MinCurV,then do fast fourier transform and calculate area-weighted radial spectrumin dw band in different windowsize.
-!It will output a spectrun file and a new coordinate file based on different windowsize and steplength.
+!Reads grid data from MinCurV, and do fast fourier transform and calculate area-weighted radial spectrum in dw band in different window size.
+!It will output a spectrum file and a new coordinate file based on different window sizes and step lengths.
 !
 !
-! Written by:
-!  Yihong Yin, Chun-Feng LI,
-!  with additional code by Kirby
+! Credits:  Yihong Yin and Chun-Feng Li @ Zhejiang University
+!  with reference to J.F. Kirby (2005); subroutine  f_sras from  Phillips, J.D., 1997
 ! 
 !
 ! References:
-!  Kirby, J.F. (2005). Which wavelet best reproduces the Fourier power
+!  Kirby, J.F., 2005. Which wavelet best reproduces the Fourier power
 !    spectrum?, Computers and Geosciences, 31(7): 846-864.
 !  Phillips, J.D., 1997. Potential-field geophysical software for the PC, version 2.2. U.S.
 !    Geological Survey, Open-File, Report, 97-725.	
-! 
+!  Yin Y.H, Li C.-F., Lu Y., 2021. Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
+!    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 ! 
 ! usage: FFT input file, window size, step length, output file
 !
-! For further information about program, use command "man FFT " in Terminal.
+! For further information about program, type "man FFT" in Terminal.
 !
 
 
@@ -72,7 +70,7 @@ program Wft
     call getarg(5,w)
     call getarg(6,outfile) 
   else
-    write(*,*) 'pls input correct parameter!'
+    write(*,*) 'pls input correct parameter'
   endif
 
   read(size,*) windowsize
@@ -86,7 +84,7 @@ program Wft
   !dw=0.006
   !wmax=0.15
   !outfile='spectra.dat'
-  write(*,*)'FFT is running, pls waiting ...'
+  write(*,*)'FFT is running, pls wait ...'
 
   open(15,file=outfile,form='formatted')
   write(15,*)ch1,ch2
@@ -186,7 +184,7 @@ program Wft
   close(15)
   
   
-  write(*,*)'FFT Successfully'
+  write(*,*)'FFT Successful'
 
  deallocate(rfg,ifg,afg,data)
 end	program Wft	
@@ -823,6 +821,7 @@ subroutine f_sras(outfile,rfg,ifg,a,n,n2,n1,n22,dy,dx,dw,wmax)
       
       return
 end subroutine
+
 !**********************************************
 !Open an  existing file.
 !*************************************************
@@ -835,7 +834,7 @@ subroutine open_old_file(nunit,filename,form)
  if(file_exist) then
   open(nunit,file=filename,status='old',form=form)
  else
-  write(*,*) 'file:',filename,'doesnot exist'
+  write(*,*) 'file:',filename,'does not exist'
   write(*,*) 'please input filename='
   read(*,*) filename
   open(nunit,file=filename,status='old',form=form)
