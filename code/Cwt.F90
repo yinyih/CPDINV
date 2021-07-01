@@ -13,14 +13,14 @@
 ! 
 ! References:
 !  Kirby, J.F., 2005. Which wavelet best reproduces the Fourier power spectrum?, Computers and Geosciences, 31(7): 846-864.
-!  Gaudreau, E., Audet, P., & Schneider, D. A. (2019). Mapping Curie Depth Across Western Canada From a Wavelet Analysis of Magnetic Anomaly Data.
+!  Gaudreau, E., Audet, P., & Schneider, D. A. 2019. Mapping Curie Depth Across Western Canada From a Wavelet Analysis of Magnetic Anomaly Data.
 !    Journal of Geophysical Research, 124(5), 4365-4385. 
 !  Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
 !    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 !   
 ! usage: Cwt input file name, center wavenumber, scale increment, moving distance, output file name
 !
-! For further information about this program, type "man cwt" in Terminal.
+! For further information about this program, type "man Cwt" in Terminal.
 !
 
 Program Cwt
