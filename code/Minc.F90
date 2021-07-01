@@ -1,4 +1,4 @@
-!***************************** MinCurV.F90 *****************************
+!***************************** Minc.F90 *****************************
 !
 !This program generates a 2-dimensional grid, equally spaced in x and y directions, from randomly placed data points. 
 !The minimum curvature algorithm  produces a smooth grid by iteratively solving a set of difference equations which minimize the total
