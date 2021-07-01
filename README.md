@@ -9,7 +9,7 @@ This package consists of six applications, including projection, interpolation, 
 
 We refer to the USGS potential field software (Cordell et al. 1993; Phillips, 1997), Kirby et al. (2005) and Wang et al. (2010) in writing our software.
 
-Authors: Yihong Yin and Chunfeng Li
+Authors: Yihong Yin (15610046532@163.com) and Chunfeng Li
 
 ## **Installation**
 ### **Dependencies**
