@@ -1,5 +1,5 @@
 
-!***************************** Project.F90 *****************************
+!***************************** Proj.F90 *****************************
 !
 !This program reads (longitude, latitude) positions from standard input and computes (x,y) coordinates
 !using the ellipsoidal transverse mercator map projection. Optionally, it can read (x,y) positions
@@ -14,7 +14,7 @@
 !  Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
 !    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 ! 
-! usage: Project input file name, -1/1, central longitude, base latitude, output file name
+! usage: Proj input file name, -1/1, central longitude, base latitude, output file name
 !
 ! For further information about program, type "man Project " in Terminal.
 !
