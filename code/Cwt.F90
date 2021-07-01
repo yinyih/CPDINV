@@ -18,7 +18,7 @@
 !  Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
 !    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 !   
-! usage: CWT input file name, center wavenumber, scale increment, moving distance, output file name
+! usage: Cwt input file name, center wavenumber, scale increment, moving distance, output file name
 !
 ! For further information about this program, type "man cwt" in Terminal.
 !
