@@ -1,6 +1,6 @@
 !***************************** Cwt.F90 *****************************
 !
-!This program reads grid from MinCurV.F90, and do continuous wavelet transform (CWT) using the 'FAN wavelet' in Kirby (2005).
+!This program reads grid from Minc.F90, and do continuous wavelet transform (CWT) using the 'FAN wavelet' in Kirby (2005).
 !Wavelets at different azimuths and scales are convolved with the entire magnetic anomaly grid, 
 !avoiding the segmentation of the signal into finite-size windows. 
 !Wavelet transform offers a better compromise between spatial and wavenumber resolution than moving windows 
