@@ -16,7 +16,7 @@
 !  Yin Y.H, Li C.-F., Lu Y., 2021. Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
 !    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 ! 
-! usage: Wft input file, window size, step length,dk, kmax output file
+! usage: Wft input file, window size, step length,dw, wmax, output file
 !
 ! For further information about program, type "man Wft" in Terminal.
 !
