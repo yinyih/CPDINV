@@ -1,21 +1,22 @@
 !***************************** MinCurV.F90 *****************************
 !
-!This program generates a 2-dimensional grid, equally incremente in x and y, from randomly placed data points. 
+!This program generates a 2-dimensional grid, equally spaced in x and y directions, from randomly placed data points. 
 !The minimum curvature algorithm  produces a smooth grid by iteratively solving a set of difference equations which minimize the total
-!2nd horizontal derivative and attempt to honor input data.,
-!the output file header includes 'DSAA';columns rows ;xmin xmax;ymin ymax;zmin zmax
+!2nd horizontal derivative and attempt to honor input data.
+!The output file header includes 'DSAA';columns rows ;xmin xmax;ymin ymax;zmin zmax
 !
-! Written by:
-!  Yihong Yin, Chun-Feng LI,
+! Credits:  Wanyin Wang
+! Yihong Yin and Chun-Feng Li @ Zhejiang University
 ! 
-!
-! ReferencesS
+! !
+! References
 !  Wang W Y. (2010). Minimum Curvature method and Fortran programming in data processing of potential field (in Chinese). Geological Publishing House.
-! 
+!  Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
+!    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 !
 ! usage: MinCurV input file name, xmin/xmax/ymin/ymax, dx,dy,output file name
 !
-! For further information about program, use command "man MinCurV" in Terminal.
+! For further information about program, type "man MinCurV" in Terminal.
 !
 
 Program Minc
@@ -96,7 +97,7 @@ Program Minc
   read(dx_str,*) dx
   read(dy_str,*) dy
   
- write(*,*)'Minimum Curvature is running, pls waiting ...'
+ write(*,*)'Minimum Curvature is running, pls wait ...'
  
  
  eigval=1.70141e+38
@@ -122,7 +123,7 @@ Program Minc
    end IF
    deallocate(FIELD_x,FIELD_y,FIELD_u,FIELD)
 
-   write(*,*)'Minimum Curvature has done successfully'
+   write(*,*)'Minimum Curvature done successfully'
    
   end IF
 
@@ -200,7 +201,7 @@ subroutine open_old_file(nunit,filename,form)
  if(file_exist) then
   open(nunit,file=filename,status='old',form=form)
  else
-  write(*,*) 'file:',filename,'doesnot exist'
+  write(*,*) 'file:',filename,'does not exist'
   write(*,*) 'please input filename='
   read(*,*) filename
   open(nunit,file=filename,status='old',form=form)
@@ -319,7 +320,7 @@ end subroutine input_xyz_column
 
 !************************************************
 !Minimum curvature gridding of two dimensional discrete data
-!The sub modules used are as follows：
+!The sub modules used are as followss:
 !duplicate_2d_eigval_sub:eliminate 2-D repeated point 
 !method_inital_2d_random_sub:determinate initial value and constraint point selection of 2-D grid nodes
 !method-edge_2d_eigval_sub:determinate endpoint of 2-D grid data
@@ -767,9 +768,9 @@ end subroutine METHOD_edge_2D_eigval_sub
 
 !******************************************************************
 !Initial value of blank point in 2-D grid data
-!Submodule：
+!Submodules
 !method_inital_2d_1Dbi:Determinate initial value of 1-D bidirectional interpolation
-!method_inital_2d_distance：Determinate initial value of 2-D bidirectional interpolation
+!method_inital_2d_distance to determinate initial value of 2-D bidirectional interpolation
 !*********************************************************************
 subroutine method_inital_2d_sub(method_initial,eigval,mpoint,line,FIELD)
  real eigval
@@ -808,7 +809,7 @@ end subroutine method_inital_2d_sub
 
 !******************************************************************
 !Use 1-D bidirectional interpolation to complete 2-D interpolation
-!submodule：
+!submodules
 !method_inital_1d_sub:determinate initial value of 1-D bidirectional interpolation
 !*********************************************************************
 subroutine method_inital_2d_1Dbi(method_initial,eigval,mpoint,line,FIELD)
