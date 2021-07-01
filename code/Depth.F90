@@ -1,16 +1,19 @@
 !*****************************Depth.F90 *****************************
 !
-!This Program reads Z0 file and Zt file and their uncertainty name from LS_Fitting and calculate Zb according format Zb=2*Z0-Zt.
-!then read coordinate file from FFT to generate the xyz data including (x,y,Zb)
+!This program reads Z0  and Zt file and their uncertainty  from LS_Fitting and calculate Zb according to Zb=2*Z0-Zt.
+!It reads in coordinate file from FFT to generate the xyz data including (x,y,Zb)
 !
+! Credits:  Yihong Yin and Chun-Feng Li @ Zhejiang University
+! 
+! References:
 !
-!  Written by:
-!  Yihong Yin, Chun-Feng LI,
+!  Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
+!    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 !
 !
 ! usage: DepthZ0 input file, Zt input file, Z0 uncertainty input file, Zt uncertainty input file, Zb output file, Zb uncertainty output file
 !
-! For further information about program, use command "man Depth " in Terminal.
+! For further information about program, typed "man Depth" on prompt.
 !
 
 
@@ -39,7 +42,7 @@ Program Depth
    call getarg(5,outfile1)
    call getarg(6,outfile2)
   else
-   write(*,*) 'pls input correct parameter!'
+   write(*,*) 'pls input correct parameter'
   endif
 
    !i1=index(infile1,'.')
@@ -53,7 +56,7 @@ Program Depth
   !infile3='coordinate.dat'
   !outfile='o.txt'
 
-  write(*,*)'Depth is running, pls waiting ...'
+  write(*,*)'Depth is running, pls wait ...'
   call search_unit(10,nunit_in)
   call open_old_file(nunit_in,infile1,'formatted')
   call open_old_file(nunit_in+1,infile2,'formatted')
@@ -105,7 +108,7 @@ Program Depth
   close(14)
   deallocate(data,coordinate,uncertainty)
 
-  write(*,*)'Depth has done successfully...'
+  write(*,*)'Depth done successfully...'
 end Program Depth
 
 !**********************************************
@@ -120,7 +123,7 @@ subroutine open_old_file(nunit,filename,form)
     if(file_exist) then
      open(nunit,file=filename,status='old',form=form)
     else
-     write(*,*) 'file:',filename,'doesnot exist'
+     write(*,*) 'file:',filename,'does not exist'
      write(*,*) 'please input filename='
      read(*,*) filename
      open(nunit,file=filename,status='old',form=form)
