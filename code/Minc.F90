@@ -16,7 +16,7 @@
 !
 ! usage: Minc input file name, xmin/xmax/ymin/ymax, dx,dy,output file name
 !
-! For further information about program, type "man MinCurV" in Terminal.
+! For further information about program, type "man Minc" in Terminal.
 !
 
 Program Minc
