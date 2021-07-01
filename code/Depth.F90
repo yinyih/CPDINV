@@ -1,7 +1,7 @@
 !*****************************Depth.F90 *****************************
 !
-!This program reads Z0  and Zt file and their uncertainty  from LS_Fitting and calculate Zb according to Zb=2*Z0-Zt.
-!It reads in coordinate file from FFT to generate the xyz data including (x,y,Zb)
+!This program reads Z0  and Zt file and their uncertainty  from Lsfit.F90 and calculate Zb according to Zb=2*Z0-Zt.
+!It reads in coordinate file from Wft to generate the xyz data including (x,y,Zb)
 !
 ! Credits:  Yihong Yin and Chun-Feng Li @ Zhejiang University
 ! 
