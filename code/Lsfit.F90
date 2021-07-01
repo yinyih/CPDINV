@@ -1,4 +1,4 @@
-!***************************** LS_Fitting.F90 *****************************
+!***************************** Lsfit.F90 *****************************
 !
 !This program reads the spectra file from FFT, and calculates Z0 and Zt in low and high wavenumber domains 
 !respectively, by least square linear fitting. The wavenumber range can be selected 
@@ -14,7 +14,7 @@
 ! 
 ! usage: Lsfit input file name, Zt/Z0,Fractal exponent,line of each spectrum,index_of_kmin,index_of_kmax output file name
 !
-! For further information about program, type "man LS_Fitting" in Terminal.
+! For further information about program, type "man Lsfit" in Terminal.
 !
 
 program Lsfit
