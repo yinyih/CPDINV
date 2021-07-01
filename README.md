@@ -1,6 +1,6 @@
 # CPDINV
 
-Software for estimating Curie depth using centroid method with wavelet spectrum and Fourier spectrum. The Curie depth is an important magnetic interface for studying the geological 
+Software for estimating Curie-point depth using centroid method with wavelet spectrum and Fourier spectrum. The Curie-point depth is an important magnetic interface for studying the geological 
 structure and thermal evolution of the crust and lithosphere, and it is common to estimate the Curie-point depth by spectral analysis of magnetic anomaly data. The software 
 combines the Fourier transform and wavelet transform with the centroid method, respectively, and then complete the whole program of inversion of Curie-point depth based on 
 FORTRAN language, which can run stably in Linux system.
