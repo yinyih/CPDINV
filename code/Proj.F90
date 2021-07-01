@@ -3,16 +3,20 @@
 !
 !This program reads (longitude, latitude) positions from standard input and computes (x,y) coordinates
 !using the ellipsoidal transverse mercator map projection. Optionally, it can read (x,y) positions
-!and compute (longitude, latitude) values doing the inverse transformation.
+!and compute (longitude, latitude) values in the inverse transformation.
 !
 !
-! Written by:
-!  Yihong Yin, Chun-Feng LI,
+! Credits:  Yihong Yin and Chun-Feng Li @ Zhejiang University
 !
+! 
+! References:
+!
+!  Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
+!    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 ! 
 ! usage: Project input file name, -1/1, central longitude, base latitude, output file name
 !
-! For further information about program, use command "man Project " in Terminal.
+! For further information about program, type "man Project " in Terminal.
 !
 
 Program Proj
@@ -49,7 +53,7 @@ Program Proj
   call getarg(4,blstr)
   call getarg(5,outfile)
  else
-  write(*,*) 'pls input correct parameter!'
+  write(*,*) 'pls input correct parameter'
  endif
 
  read(pro_type,*) type
@@ -64,7 +68,7 @@ Program Proj
 
  i=index(infile,'.')
  file_type=infile(i+1:)
- write(*,*)'Project is running,pls waiting...'
+ write(*,*)'Project is running, pls wait...'
  !****************Open file and Read data Start***************************
 
   !*************Read grid data******************************
@@ -137,7 +141,7 @@ Program Proj
    
    val(:,1)=xkm
    val(:,2)=ykm
-    write(*,*) 'Forward Projection has done successfully'
+    write(*,*) 'Forward Projection done successfully'
  end if
   if(type.eq.-1) then
    xkm=val(:,1)
@@ -148,7 +152,7 @@ Program Proj
     
    val(:,1)=lon
    val(:,2)=lat
-    write(*,*) 'Inverse Projection has done successfully'
+    write(*,*) 'Inverse Projection done successfully'
  end if
 
  deallocate (lon,lat,xkm,ykm)
