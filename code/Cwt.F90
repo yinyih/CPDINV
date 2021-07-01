@@ -127,7 +127,7 @@ Program Cwt
  ngrid=0
  allocate(w3d(ns,rows,columns))
 
- call cwt(w3d,s0,ns,columns,rows,nx,ny,data,rwt,iwt,dx,dy,wvn0,voice)
+ call cwt2d(w3d,s0,ns,columns,rows,nx,ny,data,rwt,iwt,dx,dy,wvn0,voice)
 
   open(15,file=outfile,form='formatted')
   write(15,*)ch1,ch2
@@ -203,7 +203,7 @@ end Program Cwt
 
 
 
-subroutine cwt(w3d,s0,ns,nxA,nyA,nxA0,nyA0,fg,rfg,ifg,dxA,dyA,wvn0,voice)
+subroutine cwt2d(w3d,s0,ns,nxA,nyA,nxA0,nyA0,fg,rfg,ifg,dxA,dyA,wvn0,voice)
  
   implicit none
  
@@ -401,7 +401,7 @@ subroutine cwt(w3d,s0,ns,nxA,nyA,nxA0,nyA0,fg,rfg,ifg,dxA,dyA,wvn0,voice)
   deallocate(theta1,scale)
   deallocate(kpsi,rwg,iwg,sumkpsi,wps)
 
-end subroutine cwt
+end subroutine cwt2d
 
 !**************************************************
 !the function of FFT
