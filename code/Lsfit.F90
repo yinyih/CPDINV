@@ -1,16 +1,20 @@
 !***************************** LS_Fitting.F90 *****************************
 !
-!This program reads the spectra file from FFT,then calculate the Z0 and Zt in low wavenumber domain and high wavenumber domain 
-!which you select respectively by least square fitting method.
+!This program reads the spectra file from FFT, and calculates Z0 and Zt in low and high wavenumber domains 
+!respectively, by least square linear fitting. The wavenumber range can be selected 
 !
 !
-! Written by:
-!  Yihong Yin, Chun-Feng LI,
+! Credits:  Yihong Yin and Chun-Feng Li @ Zhejiang University
+! 
+! References:
+!
+!  Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
+!    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 !
 ! 
 ! usage: LS_Fitting input file name, Zt/Z0,Fractal exponent,line of each spectrum,kmin,kmax output file name
 !
-! For further information about program, use command "man LS_Fitting " in Terminal.
+! For further information about program, type "man LS_Fitting" in Terminal.
 !
 
 program Lsfit
@@ -51,7 +55,7 @@ program Lsfit
     call getarg(7,outfile)
     call getarg(8,outfile2)
   else
-   write(*,*) 'pls input correct parameter!'
+   write(*,*) 'pls input correct parameter'
   endif
   
   read(Bstr,*) B
@@ -76,7 +80,7 @@ program Lsfit
       ! 
      !end if
 
-  write(*,*) 'The least square fitting is running,pls waiting...'
+  write(*,*) 'The least square fitting is running, pls wait...'
   
   call search_unit(10,nunit_in)
   call open_old_file(nunit_in,infile,'formatted')
@@ -147,7 +151,7 @@ program Lsfit
   
   deallocate(zt,uncertainty)
 
-  write(*,*) 'The least square fitting has done successfully'
+  write(*,*) 'The least square fitting done successfully'
  
   
 end program Lsfit
@@ -222,7 +226,7 @@ subroutine open_old_file(nunit,filename,form)
  if(file_exist) then
   open(nunit,file=filename,status='old',form=form)
  else
-  write(*,*) 'file:',filename,'doesnot exist'
+  write(*,*) 'file:',filename,'does not exist'
   write(*,*) 'please input filename='
   read(*,*) filename
   open(nunit,file=filename,status='old',form=form)
