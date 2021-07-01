@@ -1,6 +1,6 @@
 !***************************** Wft.F90 *****************************
 !
-!Reads grid data from MinCurV, and do fast fourier transform and calculate area-weighted radial spectrum in dw band in different window size.
+!Reads grid data from Minc, and do fast fourier transform and calculate area-weighted radial spectrum in dw band in different window size.
 !It will output a spectrum file and a new coordinate file based on different window sizes and step lengths.
 !
 !
