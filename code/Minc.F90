@@ -14,7 +14,7 @@
 !  Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
 !    Geophysical Journal International,  DOI: 10.1093/gji/ggab257
 !
-! usage: MinCurV input file name, xmin/xmax/ymin/ymax, dx,dy,output file name
+! usage: Minc input file name, xmin/xmax/ymin/ymax, dx,dy,output file name
 !
 ! For further information about program, type "man MinCurV" in Terminal.
 !
