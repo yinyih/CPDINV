@@ -1,15 +1,11 @@
 # CPDINV
 
-Software for estimating Curie-point depth using centroid method with wavelet spectrum and Fourier spectrum. The Curie-point depth is an important magnetic interface for studying the geological 
-structure and thermal evolution of the crust and lithosphere, and it is common to estimate the Curie-point depth by spectral analysis of magnetic anomaly data. The software 
-combines the Fourier transform and wavelet transform with the centroid method, respectively, and then complete the whole program of inversion of Curie-point depth based on 
-FORTRAN language, which can run stably in Linux system.
+Software for estimating Curie-point depth using centroid method with both wavelet spectrum and Fourier spectrum. 
+ 
+Curie-point depth is an important magnetic interface for studying the geological structure and thermal evolution of the crust and lithosphere, and it is common to estimate the Curie-point depth by spectral analysis of magnetic anomaly data. This FORTRAN software estimates Curie-point depth with the centroid method, using either Fourier transform or wavelet transform. It can be installed in Linux system with GFortran 4.8 and above.
+This package consists of six functions, including projection, interpolation, power spectrum calculation, least squares fitting, Curie-point depth calculation.
 
-This package consists of six applications, including projection, interpolation, power spectrum calculation (Fourier transform and wavelet transform), the least squares fitting of the centroid method, Curie-point depth calculation, which is installed and running on a Linux system with GFORTRAN 4.8 and above version.
-
-We refer to the USGS potential field software (Cordell et al. 1993; Phillips, 1997), Kirby et al. (2005) and Wang et al. (2010) in writing our software.
-
-Authors: Yihong Yin (15610046532@163.com) and Chunfeng Li
+Credits: Yihong Yin (15610046532@163.com) and Chun-Feng Li (cfli@zji.edu.cn) @ Zhejiang University
 
 ## **Installation**
 ### **Dependencies**
