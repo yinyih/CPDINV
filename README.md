@@ -34,4 +34,7 @@ Kirby, J. F. (2005). Which wavelet best reproduces the Fourier power spectrum? C
 
 Phillips, J.D., (1997). Potential-field geophysical software for the PC, version 2.2. U.S.Geological Survey, Open-File, Report, 97-725.  
 
-Wang W Y.(2010). Minimum Curvature method and Fortran programming in data processing of potential field (in Chinese). Geological Publishing House.  
+Wang W Y.(2010). Minimum Curvature method and Fortran programming in data processing of potential field (in Chinese). Geological Publishing House.    
+
+Yin Y.H, Li C.-F., Lu Y., 2021, Estimating Curie-point depths using both wavelet-based and Fourier spectral centroid methods in the western Pacific marginal seas. 
+ Geophysical Journal International,  DOI: 10.1093/gji/ggab257
