@@ -1,6 +1,6 @@
 !***************************** Lsfit.F90 *****************************
 !
-!This program reads the spectra file from Wft, and calculates Z0 and Zt in low and high wavenumber domains 
+!This program reads the spectra file from Wft or Cwt, and calculates Z0 and Zt in low and high wavenumber domains 
 !respectively, by least square linear fitting. The wavenumber range can be selected 
 !
 !
