@@ -8,7 +8,7 @@ Wft mag_test.grd 116 36 0.006 0.15 spectra_fft_300.dat
 Lsfit spectra_fft_300.dat Zt 3 27 7 14 Zt_300.dat Zt_300_uncertainty.dat
 Lsfit spectra_fft_300.dat Z0 3 27 1 6 Z0_300.dat  Z0_300_uncertainty.dat
 Depth Z0_300.dat Zt_300.dat Z0_300_uncertainty.dat Zt_300_uncertainty.dat Zb_300.dat Zb_300_uncertainty.dat
-Proj Zb_300_uncertainty.dat -1 125 20 Z_300_uncertainty.dat
+Proj Zb_300.dat -1 125 20 Z_300.dat
 
 xyzname=Z_300.dat
 grdname=Z_300.grd
