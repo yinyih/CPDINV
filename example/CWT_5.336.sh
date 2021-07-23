@@ -8,7 +8,7 @@ Cwt mag_test.grd 5.336 4.0 10 spectra_cwt_5.336.dat
 Lsfit spectra_cwt_5.336.dat Zt 3 43 32 37 Zt_5.336_dat Zt_5.336_uncertainty.dat
 Lsfit spectra_cwt_5.336.dat Z0 3 43 22 31 Z0_5.336_dat  Z0_5.336_uncertainty.dat
 Depth Z0_5.336.dat Zt_5.336.dat Z0_5.336_uncertainty.dat Zt_5.336_uncertainty.dat Zb_5.336.dat Zb_5.336_uncertainty.dat
-Proj Zb_5.336_uncertainty.dat -1 125 20 Z_5.336_uncertainty.dat
+Proj Zb_5.336.dat -1 125 20 Z_5.336.dat
 
 xyzname=Z_5.336.dat
 grdname=Z_5.336.grd
