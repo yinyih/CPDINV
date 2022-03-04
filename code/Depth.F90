@@ -83,7 +83,7 @@ Program Depth
   end do
   
   do i=1,rows*columns
-    data(i)=2*data1(i)-data2(i)
+    data(i)=2*data1(i)-data2(i)-4
      if(data(i).lt.0) data(i)=0
     uncertainty(i)=sqrt(4*data3(i)*data3(i)+ data4(i)*data4(i));
   end do
